@@ -1,6 +1,25 @@
 # ssm
 Simple State Management - simple implementation of satet management system - inpirex by redux and ngRx effects
 
+ssm works invery simple way of providing paths to proper data slices, so each component or class(service) can access:
+example of state:
+```
+app: {
+  global: {
+    appVersion: "1.0"
+  }
+  device: {
+    os: "Windows",
+    resolution: {width: 1280, height: 800},
+    dpi: 72
+  }
+}
+```
+example of paths:
+"app/global" - slice path to global data
+"app/device" - slice path to device data
+...
+
 todo: create npm package
 
 usage:
